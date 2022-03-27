@@ -2,27 +2,26 @@ package com.example.tipcalculator.ui.theme.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.OutlinedTextField
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.Slider
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.text.input.KeyboardType
-import androidx.core.text.isDigitsOnly
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun informaPercent(valor: Int, onPercentChange: (Int) -> Unit) {
     Row(
         horizontalArrangement = Arrangement.Center,
-        verticalAlignment = Alignment.CenterVertically
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.padding(10.dp)
     ) {
-        Text(text = "Percentual % ")
         Slider(
             value = valor.toFloat(),
             onValueChange = { onPercentChange(it.toInt()) },
             valueRange = 0f..30f,
-
+            modifier = Modifier.size(height = 20.dp, width = 200.dp)
         )
         /*OutlinedTextField(
             value = valor.toString(),
