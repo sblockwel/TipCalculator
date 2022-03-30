@@ -1,4 +1,4 @@
-package com.example.tipcalculator.ui.theme.components
+package com.example.tipcalculator.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
