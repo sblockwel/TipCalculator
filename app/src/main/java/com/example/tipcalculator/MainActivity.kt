@@ -13,15 +13,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.tipcalculator.ui.theme.TipCalculatorTheme
-<<<<<<< Updated upstream
-import com.example.tipcalculator.ui.theme.components.informaPercent
-import com.example.tipcalculator.ui.theme.components.informaValor
-import java.text.DecimalFormat
-=======
 import com.example.tipcalculator.components.informaPercent
 import com.example.tipcalculator.components.informaValor
->>>>>>> Stashed changes
+import com.example.tipcalculator.ui.theme.TipCalculatorTheme
+import java.text.DecimalFormat
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,7 +42,7 @@ fun App() {
         mutableStateOf(0f)
     }
     var percentState by remember {
-        mutableStateOf(0)
+        mutableStateOf(18)
     }
     Column(
         verticalArrangement = Arrangement.Center,
